@@ -1,0 +1,55 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--accent);
+}
+
+.section {
+  overflow: hidden;
+  padding-top: 30vh;
+  padding-bottom: 5vh;
+  position: relative;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.parallax {
+  letter-spacing: 2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  // background-color: hsla(123, 19%, 21%, .15);
+  background-color: #222;
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 32px;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  // max-width: 260px;
+  padding: 0 20px;
+}
+
+.parallax span {
+  display: block;
+}
+
+.parallaxContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.svgContainer{
+  display: flex;
+  // margin-left: 20px;
+  align-items: center;
+  gap: 5px;
+}
