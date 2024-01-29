@@ -16,18 +16,20 @@ export default function Magnetic({
   const magnetic = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    const xTo = gsap.quickTo(magnetic.current, 'x', {
+    const currentMagnetic = magnetic.current
+
+    const xTo = gsap.quickTo(currentMagnetic, 'x', {
       duration: animationProps.duration || 1,
       ease: animationProps.ease || 'elastic.out(1, 0.3)',
     })
-    const yTo = gsap.quickTo(magnetic.current, 'y', {
+    const yTo = gsap.quickTo(currentMagnetic, 'y', {
       duration: animationProps.duration || 1,
       ease: animationProps.ease || 'elastic.out(1, 0.3)',
     })
 
     const handleMouseMove = (e: MouseEvent) => {
       const { clientX, clientY } = e
-      const boundingBox = magnetic.current?.getBoundingClientRect()
+      const boundingBox = currentMagnetic?.getBoundingClientRect()
 
       if (boundingBox) {
         const { height, width, left, top } = boundingBox
@@ -43,15 +45,15 @@ export default function Magnetic({
       yTo(0)
     }
 
-    if (magnetic.current) {
-      magnetic.current.addEventListener('mousemove', handleMouseMove)
-      magnetic.current.addEventListener('mouseleave', handleMouseLeave)
+    if (currentMagnetic) {
+      currentMagnetic.addEventListener('mousemove', handleMouseMove)
+      currentMagnetic.addEventListener('mouseleave', handleMouseLeave)
     }
 
     return () => {
-      if (magnetic.current) {
-        magnetic.current.removeEventListener('mousemove', handleMouseMove)
-        magnetic.current.removeEventListener('mouseleave', handleMouseLeave)
+      if (currentMagnetic) {
+        currentMagnetic.removeEventListener('mousemove', handleMouseMove)
+        currentMagnetic.removeEventListener('mouseleave', handleMouseLeave)
       }
     }
   }, [animationProps])
