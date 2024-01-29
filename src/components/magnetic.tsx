@@ -1,8 +1,19 @@
 import gsap from 'gsap'
-import React, { useEffect, useRef } from 'react'
+import React, { ReactElement, useEffect, useRef } from 'react'
 
-export default function Magnetic({ children, animationProps = {} }) {
-  const magnetic = useRef(null)
+interface MagneticProps {
+  children: ReactElement
+  animationProps?: {
+    duration?: number
+    ease?: string
+  }
+}
+
+export default function Magnetic({
+  children,
+  animationProps = {},
+}: MagneticProps) {
+  const magnetic = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     const xTo = gsap.quickTo(magnetic.current, 'x', {
@@ -14,20 +25,38 @@ export default function Magnetic({ children, animationProps = {} }) {
       ease: animationProps.ease || 'elastic.out(1, 0.3)',
     })
 
-    magnetic.current.addEventListener('mousemove', (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       const { clientX, clientY } = e
-      const { height, width, left, top } =
-        magnetic.current.getBoundingClientRect()
-      const x = clientX - (left + width / 2)
-      const y = clientY - (top + height / 2)
-      xTo(x)
-      yTo(y)
-    })
-    magnetic.current.addEventListener('mouseleave', (e) => {
+      const boundingBox = magnetic.current?.getBoundingClientRect()
+
+      if (boundingBox) {
+        const { height, width, left, top } = boundingBox
+        const x = clientX - (left + width / 2)
+        const y = clientY - (top + height / 2)
+        xTo(x)
+        yTo(y)
+      }
+    }
+
+    const handleMouseLeave = () => {
       xTo(0)
       yTo(0)
-    })
+    }
+
+    if (magnetic.current) {
+      magnetic.current.addEventListener('mousemove', handleMouseMove)
+      magnetic.current.addEventListener('mouseleave', handleMouseLeave)
+    }
+
+    return () => {
+      if (magnetic.current) {
+        magnetic.current.removeEventListener('mousemove', handleMouseMove)
+        magnetic.current.removeEventListener('mouseleave', handleMouseLeave)
+      }
+    }
   }, [animationProps])
 
-  return React.cloneElement(children, { ref: magnetic })
+  return React.cloneElement(children, {
+    ref: magnetic,
+  } as React.HTMLAttributes<HTMLDivElement>)
 }
