@@ -84,7 +84,7 @@ function ParallaxSVG({
     clamp: false,
   })
 
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`)
+  // const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`)
 
   const directionFactor = useRef<number>(1)
   useAnimationFrame((t, delta) => {
@@ -102,22 +102,17 @@ function ParallaxSVG({
   })
 
   return (
-    <div className={styles.parallax}>
-      <motion.div className={styles.scroller} style={{ x }}>
-        <motion.div className={styles.svgContainer}>
-          <motion.svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill={highlightColor}
-            viewBox="0 0 24 24"
-          >
-            {svg}
-          </motion.svg>
-          <span style={{ color: highlightColor }}>{techName}</span>
-        </motion.div>
-      </motion.div>
-    </div>
+    // <motion.div className={styles.svgContainer} style={{ x }}>
+    <motion.div className={styles.svgContainer}>
+      <motion.svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill={highlightColor}
+        viewBox="0 0 24 24"
+      >
+        {svg}
+      </motion.svg>
+      <span style={{ color: highlightColor }}>{techName}</span>
+    </motion.div>
   )
 }
 const TailwindSVG = (

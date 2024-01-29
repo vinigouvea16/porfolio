@@ -1,13 +1,23 @@
 .header{
+  width: 100%;
   color: #c4bdb3;
   // border-bottom: 1px solid #afa18f84;
   border-bottom: 1px solid #38ff3545;
   display: flex;
-  padding: 16px 0 16px 72px;
+  padding: 0.5rem 0 0.5rem 3rem;
 }
 
 .h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   padding-left: 10px;
+}
+
+@media (width > 40rem) {
+  .header {
+    padding: 1rem 0 1rem 4.5rem;
+  }
+  .h1 {
+    font-size: 2.5rem;
+  }
 }

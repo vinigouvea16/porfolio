@@ -12,7 +12,7 @@ export default function Projects() {
   })
   const height = useTransform(scrollYProgress, [0, 1], [100, 0])
   return (
-    <div className="container" ref={container}>
+    <div className="containerProject" ref={container}>
       <ProjectsComponent
         title="JavaDelight"
         h2Text="ジャワディライト"

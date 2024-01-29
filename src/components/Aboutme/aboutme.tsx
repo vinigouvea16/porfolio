@@ -17,9 +17,11 @@ export function AboutMe() {
   }
 
   const { x, y } = mousePosition || { x: null, y: null }
+
   const size = isHovered ? 300 : 40
   const maskPosition =
-    x !== null && y !== null ? `${x - size / 2}px ${y - size / 2}px` : '0 0'
+    // x !== null && y !== null ? `${x - size / 2}px ${y - size / 2}px` : '0 0'
+    x !== null && y !== null ? `${x - size / 2}px ${y - size / 1.2}px` : '0 0'
 
   const birthdate = new Date('1994-06-06')
   const today = new Date()
@@ -51,9 +53,9 @@ export function AboutMe() {
         >
           Hi, my name is Vinicius <br />
           <br />
-          I&apos;m a {age} yo brazillian FullStack developer transitioning
-          careers. Currently, I am engaged in freelance work and open to job
-          opportunities #OpenToWork
+          At {age} years old, I am a brazillian FullStack developer in the midst
+          of a career transition. Currently, I am actively involved in freelance
+          projects and eagerly exploring new job opportunities. #OpenToWork
         </p>
       </motion.div>
 
@@ -62,9 +64,10 @@ export function AboutMe() {
           Hi, my name is Vinicius
           <br />
           <br />
-          I&apos;m a {age} yo brazillian <span>FrontEnd developer </span>{' '}
-          transitioning careers. Currently, I am engaged in freelance work and
-          open to job opportunities <span>#OpenToWork</span>
+          At {age} years old, I am a brazillian <span>FrontEnd developer </span>{' '}
+          in the midst of a career transition. Currently, I am actively involved
+          in freelance projects and eagerly exploring new job opportunities.{' '}
+          <span>#OpenToWork</span>
         </p>
       </div>
     </main>

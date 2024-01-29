@@ -2,8 +2,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Magnetic from '../magnetic'
-import styles from './contact.module.css'
-
+import styles from './contact.module.scss'
 export default function Contact() {
   const [localTime, setLocalTime] = useState(getFormattedLocalTime())
 
@@ -31,22 +30,22 @@ export default function Contact() {
   }
 
   return (
-    <div className={styles.body}>
+    <footer className={styles.body}>
       <div className={styles.title}>
-        <span className={styles.span}>
-          <div className={styles.imageContainer}>
-            <Image
-              alt={'image'}
-              src="/profile2.png"
-              width={100}
-              height={100}
-              className={styles.img}
-            />
-          </div>
-          <h2>Let&apos;s work</h2>
-        </span>
-        <h2>together</h2>
+        <Image
+          alt={'image'}
+          src="/profile2.png"
+          width={100}
+          height={100}
+          className={styles.img}
+        />
+
+        <h2>
+          Let&apos;s work <br />
+          together
+        </h2>
       </div>
+
       <div className={styles.nav}>
         <Magnetic animationProps={{ duration: 4, ease: 'elastic.out(1, 0.3)' }}>
           <div className={styles.rounded}>
@@ -63,6 +62,7 @@ export default function Contact() {
           </div>
         </Magnetic>
       </div>
+
       <div className={styles.info}>
         <div className={styles.infoFooter}>
           <span className={styles.span}>
@@ -74,10 +74,10 @@ export default function Contact() {
             <p>{localTime}</p>
           </span>
         </div>
+
         <div className={styles.socials}>
-          <span className={styles.span}>
-            <h3>Socials</h3>
-          </span>
+          <h3>Socials</h3>
+
           <div className={styles.svgs}>
             <Magnetic>
               <p>
@@ -96,6 +96,7 @@ export default function Contact() {
                 {/* GitHub */}
               </p>
             </Magnetic>
+
             <Magnetic>
               <p>
                 <a
@@ -119,6 +120,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }

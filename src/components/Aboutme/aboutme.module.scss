@@ -1,5 +1,7 @@
 .main{
-  height: 100vh;
+  padding-block: 4rem;
+  
+  position: relative;
 
   .mask, .body{
     width: 100%;
@@ -7,10 +9,10 @@
     display: flex;
     justify-content: center;
     color: #afa18f;
-    font-size: 64px;
-    line-height: 66px;
+    font-size: clamp(2rem, 2.5vw + 1rem, 4rem);
     cursor: default;
-    padding: 100px;
+    // padding: 100px;
+    padding-inline: 3rem;
     flex-direction: column;
     font-weight: 300;
     
@@ -27,5 +29,16 @@
     background: #0AE448;
     position: absolute;
     color: black;
+
+    inset: 0;
+  }
+}
+
+@media (width > 40rem) {
+  .main {
+    .mask, .body {
+      padding-inline: 4.5rem;
+      padding-block: 5% 10%;
+    }
   }
 }

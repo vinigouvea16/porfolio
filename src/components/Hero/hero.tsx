@@ -4,7 +4,8 @@ import TextPlugin from 'gsap/TextPlugin'
 import { Wand2 } from 'lucide-react'
 import { useRef, useState } from 'react'
 import Magnetic from '../magnetic'
-import style from './Hero.module.scss'
+import style from './hero.module.scss'
+
 gsap.registerPlugin(TextPlugin)
 
 export function Hero() {
