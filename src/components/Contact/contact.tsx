@@ -12,7 +12,7 @@ export default function Contact() {
     }, 60000)
 
     return () => clearInterval(intervalId)
-  }, [])
+  })
 
   function getFormattedLocalTime() {
     const now = new Date()
