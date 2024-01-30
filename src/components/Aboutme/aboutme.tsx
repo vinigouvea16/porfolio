@@ -43,6 +43,9 @@ export function AboutMe() {
         }}
         transition={{ type: 'tween', ease: 'backOut', duration: 0.5 }}
       >
+        <div className={`${styles.mobile} ${styles.mobileHidden}`}>
+          -Tap over the text-
+        </div>
         <p
           onMouseEnter={() => {
             setIsHovered(true)
@@ -60,6 +63,7 @@ export function AboutMe() {
       </motion.div>
 
       <div className={styles.body}>
+        <div className={styles.mobile}>-Tap over the text-</div>
         <p>
           Hi, my name is Vinicius
           <br />

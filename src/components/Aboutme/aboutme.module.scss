@@ -34,11 +34,23 @@
   }
 }
 
+.mobile{
+  font-size: 1.25rem;
+  display: flex;
+  margin: 0 auto;
+}
+.mobileHidden{
+  color: #0AE448;
+}
+
 @media (width > 40rem) {
   .main {
     .mask, .body {
       padding-inline: 4.5rem;
       padding-block: 5% 10%;
     }
+  }
+  .mobile{
+    display: none;
   }
 }
