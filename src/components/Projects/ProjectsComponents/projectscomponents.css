@@ -3,9 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #afa18f;
+  color: #C2B29E;
   font-weight: 400;
-  /* padding-bottom: 300px; */
+  padding: 50px 0;
 }
 
 .titleWrap{
@@ -23,6 +23,10 @@
 
 .textWrap {
   padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .description{
@@ -46,16 +50,43 @@
 }
 
 .link{
-  display: block;
-  font-size: 1.5rem;
-  color: #C2B29E;
+  display: flex;
+  font-size: 1.25rem;
+  color: #111315;
   font-weight: 800;
-  padding-inline: 0.5rem;
-  width: max-content;
-  border-bottom: 2px solid #C2B29E;
+  
+  width: -moz-max-content;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.link svg{
+  padding-top: 5px;
 }
 
 ::selection{
   background-color: #C2B29E;
   color: #1f1f1f;
+}
+
+.rounded{
+  border: 1px solid #111315;
+  border-radius: 3em;
+  padding: 15px 30px;
+  background-color: #C2B29E;
+}
+
+@media (width > 40rem){
+  .content{
+    padding: 150px 0;
+  }
+  .link{
+    font-size: 1.5rem;
+    padding-inline: 0.5rem;
+    gap: .5rem;
+  }
+  .rounded{
+    padding: 15px 40px;
+  }
 }
