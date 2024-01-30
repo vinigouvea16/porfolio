@@ -1,5 +1,7 @@
 .body{
-  background-color: #C2B29E;
+  // background-color: #C2B29E;
+  // background-color: #E1C3A6;
+  background-color: #B99270;
   padding-inline: 3rem;
   padding-block-start: 10rem;
   padding-block-end: 2rem;
@@ -8,6 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  // color: #111315;
 }
 
 
@@ -129,6 +132,7 @@
 
 .nav .rounded p{
   color: #C2B29E;
+  color: #E1C3A6;
   font-size: 1.5em;
   font-weight: 400;
 }
