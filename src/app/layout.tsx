@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'tailvinicss',
-  description: 'Vinicius Gouvea porfolio',
+  description: `Vinicius Gouvea's porfolio`,
 }
 
 export default function RootLayout({
