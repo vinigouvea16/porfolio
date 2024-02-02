@@ -54,11 +54,12 @@ export function AboutMe() {
             setIsHovered(false)
           }}
         >
-          Hi, my name is Vinicius <br />
+          Hi, my name is Vinicius
           <br />
-          At {age} years old, I am a brazillian FullStack developer in the midst
-          of a career transition. Currently, I am actively involved in freelance
-          projects and eagerly exploring new job opportunities. #OpenToWork
+          <br />
+          I&apos;m a Brazilian FullStack developer navigating my career
+          transition. Currently, I am actively involved in freelance projects
+          and eagerly exploring new job opportunities. #OpenToWork
         </p>
       </motion.div>
 
@@ -68,9 +69,9 @@ export function AboutMe() {
           Hi, my name is Vinicius
           <br />
           <br />
-          At {age} years old, I am a brazillian <span>FrontEnd developer </span>{' '}
-          in the midst of a career transition. Currently, I am actively involved
-          in freelance projects and eagerly exploring new job opportunities.{' '}
+          I&apos;m a Brazilian <span>FrontEnd developer</span> in the midst of a
+          career transition. Currently, I am actively involved in freelance
+          projects and eagerly exploring new job opportunities.{' '}
           <span>#OpenToWork</span>
         </p>
       </div>

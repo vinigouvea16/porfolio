@@ -50,7 +50,9 @@ export default function Contact() {
         <Magnetic animationProps={{ duration: 4, ease: 'elastic.out(1, 0.3)' }}>
           <div className={styles.rounded}>
             <p>
-              <a href="mailto:vrgouvea@outlook.com">vrgouvea@outlook.com</a>
+              <a href="mailto:contact@tailvinicss.dev">
+                contact@tailvinicss.dev
+              </a>
             </p>
           </div>
         </Magnetic>
