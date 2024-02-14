@@ -23,16 +23,16 @@ export function AboutMe() {
     // x !== null && y !== null ? `${x - size / 2}px ${y - size / 2}px` : '0 0'
     x !== null && y !== null ? `${x - size / 2}px ${y - size / 1.2}px` : '0 0'
 
-  const birthdate = new Date('1994-06-06')
-  const today = new Date()
-  const age =
-    today.getFullYear() -
-    birthdate.getFullYear() -
-    (today.getMonth() < birthdate.getMonth() ||
-    (today.getMonth() === birthdate.getMonth() &&
-      today.getDate() < birthdate.getDate())
-      ? 1
-      : 0)
+  // const birthdate = new Date('1994-06-06')
+  // const today = new Date()
+  // const age =
+  //   today.getFullYear() -
+  //   birthdate.getFullYear() -
+  //   (today.getMonth() < birthdate.getMonth() ||
+  //   (today.getMonth() === birthdate.getMonth() &&
+  //     today.getDate() < birthdate.getDate())
+  //     ? 1
+  //     : 0)
   return (
     <main className={styles.main}>
       <motion.div
