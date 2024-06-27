@@ -86,7 +86,7 @@ export default function Contact() {
                 <a
                   href="https://github.com/vinigouvea16"
                   target="_blank"
-                  aria-label="GitHub Icon"
+                  aria-label="My Github Profile"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ export default function Contact() {
                 <a
                   href="https://www.linkedin.com/in/vinicius-gouvea-969008289/"
                   target="_blank"
-                  aria-label="LinkedIn Icon"
+                  aria-label="My LinkedIn Profile"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
