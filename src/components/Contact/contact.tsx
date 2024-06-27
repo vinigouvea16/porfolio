@@ -83,7 +83,11 @@ export default function Contact() {
           <div className={styles.svgs}>
             <Magnetic>
               <p>
-                <a href="https://github.com/vinigouvea16" target="_blank">
+                <a
+                  href="https://github.com/vinigouvea16"
+                  target="_blank"
+                  aria-label="GitHub Icon"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -104,6 +108,7 @@ export default function Contact() {
                 <a
                   href="https://www.linkedin.com/in/vinicius-gouvea-969008289/"
                   target="_blank"
+                  aria-label="LinkedIn Icon"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

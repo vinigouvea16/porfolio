@@ -5,7 +5,15 @@
   // border-bottom: 1px solid #afa18f84;
   border-bottom: 1px solid #38ff3545;
   display: flex;
-  padding: 0.5rem 0 0.5rem 3rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  justify-content: space-between;
+}
+
+.button{
+  font-size: 2rem;
+  font-weight: 300;
+  color: #E1C3A6;
+  // background-color: white;
 }
 
 .h1{
@@ -16,9 +24,9 @@
 
 @media (width > 40rem) {
   .header {
-    padding: 1rem 0 1rem 4.5rem;
+    padding: 1rem 4.5 1rem 4.5rem;
   }
-  .h1 {
+  .h1, .button {
     font-size: 2.5rem;
   }
 }

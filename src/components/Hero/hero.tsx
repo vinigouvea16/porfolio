@@ -39,7 +39,11 @@ export function Hero() {
         </h2>
       </div>
       <Magnetic>
-        <button className={style.button} onClick={handleNextClick}>
+        <button
+          className={style.button}
+          onClick={handleNextClick}
+          aria-label="Change phrase"
+        >
           <Wand2 />
         </button>
       </Magnetic>
