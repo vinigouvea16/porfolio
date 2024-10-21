@@ -58,8 +58,9 @@ export function AboutMe() {
           <br />
           <br />
           I&apos;m a Brazilian FullStack developer navigating my career
-          transition. Currently, I am actively involved in freelance projects
-          and eagerly exploring new job opportunities. #OpenToWork
+          transition. Currently,
+          <br /> I am actively involved in freelance projects and eagerly
+          exploring new job opportunities. #OpenToWork
         </p>
       </motion.div>
 
