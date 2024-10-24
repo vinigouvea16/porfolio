@@ -34,7 +34,7 @@ export default function Contact() {
       <div className={styles.title}>
         <Image
           alt={'image'}
-          src="/profile2.png"
+          src="/images/profile2.png"
           width={100}
           height={100}
           className={styles.img}
