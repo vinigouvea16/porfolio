@@ -70,8 +70,8 @@ export function AboutMe() {
           <br />
           <br />
           I&apos;m a Brazilian <span>FrontEnd developer</span> in the midst of a
-          career transition. Currently, I am actively involved in freelance
-          projects and eagerly exploring new job opportunities.{' '}
+          career transition. <br /> Currently, I am actively involved in
+          freelance projects and eagerly exploring new job opportunities.{' '}
           <span>#OpenToWork</span>
         </p>
       </div>
