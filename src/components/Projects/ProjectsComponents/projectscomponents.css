@@ -17,7 +17,7 @@
 
 .title{
   transform: translate(0px, -25px);
-  font-size: clamp(2rem, 8vw + 1rem, 7rem);
+  font-size: clamp(2rem, 6vw + 1rem, 7rem);
   font-family: var(--font-major-mono-display);
   transform: scale(.2);
 }
@@ -32,10 +32,11 @@
 
 .description{
   max-width: 920px;
-  font-size: clamp(0.875rem, 1.5vw + 1rem, 1.5rem);
+  font-size: clamp(0.875rem, 0.5vw + 1rem, 1.5rem);
   /* color: #C2B29E; */
   color: #E1C3A6;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .image{
@@ -47,7 +48,7 @@
 }
 
 .h3{
-  font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+  font-size: clamp(2.5rem, 3vw + 1rem, 5rem);
   font-weight: 400;
   /* color: #C2B29E; */
   color: #E1C3A6;
