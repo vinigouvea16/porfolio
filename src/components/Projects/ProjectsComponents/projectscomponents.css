@@ -50,6 +50,7 @@
 .h3{
   font-size: clamp(2.5rem, 3vw + 1rem, 5rem);
   font-weight: 400;
+  text-align: center;
   /* color: #C2B29E; */
   color: #E1C3A6;
   font-family: var(--font-darker-grotesque);
