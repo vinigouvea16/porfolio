@@ -19,7 +19,7 @@ export default function Projects() {
       description:
         "This project was developed for Daniel Paiva, a wildlife photographer and expedition guide. The site was designed with a clean, modern aesthetic, utilizing Figma and Dribbble for inspiration, with a focus on showcasing Daniel's photography. The site was built using the latest version of Next.js (App Router), which included challenges such as integrating a photo gallery with Cloudinary’s API. The gallery features modals, animated navigation, and dedicated media-sharing URLs. Additionally, I implemented advanced features like Intercepting Routes and Parallel Routes to enhance user experience, and used next-intl for seamless multi-language support. This project highlights both front-end and back-end expertise, offering a dynamic, user-friendly interface that allows for an engaging showcase of Daniel’s work.",
       imagePath: '/images/danpaiva.png',
-      projectLink: 'https://danpaiva-wildlife.vercel.app/pt-BR',
+      projectLink: 'https://dannpaiva.com/',
     },
     {
       title: 'Papoula Hub',
