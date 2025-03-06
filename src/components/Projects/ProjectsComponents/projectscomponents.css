@@ -41,6 +41,7 @@
 
 .image{
   transform: scale(0);
+  /* opacity: 0.8; */
 }
 
 .textWrap > * ~ * {

@@ -14,12 +14,28 @@ export default function Projects() {
 
   const projectsData = [
     {
+      title: 'brainstorm',
+      h2Text: 'MIND HEALERS',
+      description:
+        "This website is an ongoing project that's almost complete and might be my biggest one yet. I had a ton of fun working with Motion’s (formerly Framer Motion) update—the layout looks amazing, and the animations are smooth and lightweight. The site is integrated with Prismic (CMS), and I’m structuring the e-commerce section using Medusa.js (a headless e-commerce solution) to help reduce my client’s monthly expenses. It will also feature a Geolocation API to redirect international customers to the appropriate store website. Please check it out and let me know what you think! It's in portuguese though",
+      imagePath: '/images/brainstorm.png',
+      projectLink: 'https://brainstorm-land.vercel.app/',
+    },
+    {
       title: 'Daniel Paiva',
       h2Text: 'Wildlife Photography Portfolio',
       description:
         "This project was developed for Daniel Paiva, a wildlife photographer and expedition guide. The site was designed with a clean, modern aesthetic, utilizing Figma and Dribbble for inspiration, with a focus on showcasing Daniel's photography. The site was built using the latest version of Next.js (App Router), which included challenges such as integrating a photo gallery with Cloudinary’s API. The gallery features modals, animated navigation, and dedicated media-sharing URLs. Additionally, I implemented advanced features like Intercepting Routes and Parallel Routes to enhance user experience, and used next-intl for seamless multi-language support. This project highlights both front-end and back-end expertise, offering a dynamic, user-friendly interface that allows for an engaging showcase of Daniel’s work.",
       imagePath: '/images/danpaiva.png',
       projectLink: 'https://dannpaiva.com/',
+    },
+    {
+      title: 'bathke',
+      h2Text: `Website for a Music Producer`,
+      description:
+        "Official website developed for music producer Rodrigo Bathke, featuring a unique design that aligns with his artistic identity. The project combines a nostalgic aesthetic with dynamic animations and an experimental visual language inspired by classic interfaces. It includes embedded music players for the artist's songs on SoundCloud. This was my first time using the Three.js library and UploadThing (Theo’s version of S3).",
+      imagePath: '/images/bathke.png',
+      projectLink: 'https://bathkemusic.vercel.app/',
     },
     {
       title: 'Papoula Hub',
@@ -29,14 +45,15 @@ export default function Projects() {
       imagePath: '/images/papoula2.png',
       projectLink: 'https://papoula-hub.vercel.app/',
     },
-    {
-      title: 'JavaDelight',
-      h2Text: 'ジャワディライト',
-      description:
-        "JavaDelight is a fictional Japanese coffee shop project that I developed, seamlessly blending modern aesthetics with traditional elements. Inspired by the Neo-brutalist style and its harmony with the Japanese alphabet, the project showcases a visually captivating layout. Emphasizing creative design and cultural richness, JavaDelight incorporates smart componentization and state management techniques learned from Rocketseat's Ignite course. The technical aspects involve state immutability, local storage for persistence, and efficient ReactJS practices. Key functionalities include dynamic product listing, intuitive cart management, personalized address forms, and automatic total value calculation. This project, reflects a passion for web development and a commitment to tackling new challenges.",
-      imagePath: '/images/javadelight1.png',
-      projectLink: 'https://java-delight.vercel.app/',
-    },
+
+    // {
+    //   title: 'JavaDelight',
+    //   h2Text: 'ジャワディライト',
+    //   description:
+    //     "JavaDelight is a fictional Japanese coffee shop project that I developed, seamlessly blending modern aesthetics with traditional elements. Inspired by the Neo-brutalist style and its harmony with the Japanese alphabet, the project showcases a visually captivating layout. Emphasizing creative design and cultural richness, JavaDelight incorporates smart componentization and state management techniques learned from Rocketseat's Ignite course. The technical aspects involve state immutability, local storage for persistence, and efficient ReactJS practices. Key functionalities include dynamic product listing, intuitive cart management, personalized address forms, and automatic total value calculation. This project, reflects a passion for web development and a commitment to tackling new challenges.",
+    //   imagePath: '/images/javadelight1.png',
+    //   projectLink: 'https://java-delight.vercel.app/',
+    // },
     // {
     //   title: 'Upload.Ai',
     //   description:
